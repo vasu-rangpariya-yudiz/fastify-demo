@@ -10,7 +10,7 @@ module.exports = async function (fastify) {
         console.log('cacheResponse', cacheResponse);
         // here when second request comes it throws an error
 
-        const response = await list({ oFnBody: request?.query })
-        return response
+        // const response = await list({ oFnBody: request?.query })
+        return cacheResponse
     })
 }
